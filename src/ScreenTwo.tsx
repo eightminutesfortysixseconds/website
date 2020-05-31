@@ -52,7 +52,7 @@ const Container = styled.div`
 `
 
 const Image = styled.img.attrs({
-  src: "https://eightminutesfortysixseconds.github.io/website/georgefloyd.png",
+  src: "https://eightminutesfortysixseconds.com/georgefloyd.png",
   className: "animate__animated animate__fadeIn",
   alt:
     "Police officer Derek Chauvin kneeling on George Floyd's neck, leading to Floyd's death.",
