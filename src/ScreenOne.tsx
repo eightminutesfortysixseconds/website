@@ -3,8 +3,8 @@ import styled from "styled-components"
 
 const ScreenOne = (props: { nextScreen: () => void }) => {
   React.useEffect(() => {
-    setTimeout(() => props.nextScreen(), 8000)
-     // eslint-disable-next-line
+    setTimeout(() => props.nextScreen(), 12000)
+    // eslint-disable-next-line
   }, [])
 
   return (
@@ -23,6 +23,16 @@ const ScreenOne = (props: { nextScreen: () => void }) => {
           , forty-six seconds.
         </span>
       </p>
+      <p
+        className="animate__animated animate__fadeIn"
+        style={{
+          animationDuration: "2s",
+          animationDelay: "4.9s",
+          fontSize: 22,
+        }}
+      >
+        Content warning: this site contains a graphic image of police violence.
+      </p>
     </Container>
   )
 }
@@ -40,6 +50,7 @@ const Container = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   font-weight: bold;
   font-size: 42px;
   font-family: "PT Serif", serif;
